@@ -9,43 +9,45 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .profile-pic {
+  border-radius: 50%;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  object-fit: cover;
 }
 
-.buttons a {
-  margin: 10px;
-  padding: 10px 20px;
-  background-color: #61dafb;
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.button-link {
   color: white;
   text-decoration: none;
-  border-radius: 5px;
 }
 
-.buttons a:hover {
-  background-color: #21a1f1;
+.button-link:hover {
+  color: #61dafb;
 }
 
 ul {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
 }
 
-ul li {
+li {
   margin: 10px 0;
 }
 
-ul li a {
-  color: #61dafb;
+a {
+  color: white;
   text-decoration: none;
 }
 
-ul li a:hover {
+a:hover {
   text-decoration: underline;
 }
